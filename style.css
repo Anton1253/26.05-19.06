@@ -1,0 +1,82 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.desktop{
+	display: grid;
+	grid-template-areas: 
+		'header header header'
+		'  main main aside '
+		' main main aside'
+		' main main aside'
+		' main main aside'
+		'footer footer aside';
+	
+		grid-template-rows: 1fr 3fr 1fr ;
+		grid-template-columns: 1fr 3fr 3fr   ;
+
+}
+
+header{
+	background-color: orange;
+	grid-area: header;
+	color: orange;
+	
+	
+}
+
+aside{
+	background-color: blue;
+	grid-area: aside;
+	color: blue;
+	height: 800px;
+
+}
+
+main{
+	background-color: yellow;
+	grid-area: main;
+	color:yellow ;
+	height: 700px;
+}
+
+footer{
+	background-color:green;
+	grid-area: footer;
+	color: green;
+	height: 100px;
+}
+
+
+.one{
+	position: absolute;
+	background-color: orange;
+	color: orange;
+	z-index: 1000;
+	height: 75px;
+	width: 250px;
+	margin-top: 200px;
+	margin-left: 50px;
+}
+
+.two{
+		position: absolute;
+		background-color: deeppink;
+		color: deeppink;
+		z-index: 1000;
+		height: 75px;
+		width: 250px;
+		margin-top:250px;
+		margin-left: 220px}
+
+.three{
+		position: absolute;
+		background-color: gray;
+		color: gray;
+		z-index: 1000;
+		height: 75px;
+		width: 250px;
+		margin-top: 300px;
+		margin-left: 390px;}	
